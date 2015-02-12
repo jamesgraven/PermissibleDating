@@ -13,40 +13,45 @@ import javax.swing.JTextField;
 public class View extends JFrame implements ActionListener
 {
 
-	JLabel info;
-	JTextField input;
-	JButton go;
-	
-	public View()
-	{
-		setLayout(new FlowLayout());
-		
-		info = new JLabel("Enter your age here...");
-		info.setSize(20, 20);
-		add(info);
-		
-		input = new JTextField(20);
-		input.setEditable(true);
-		add(input);
-		
-		go = new JButton("Find matches");
-		go.setSize(20, 20);
-		go.addActionListener(this);
-		add(go);
-		
-	}
-	
-	@Override
-	public void actionPerformed(ActionEvent e) 
-	{
-		Object cause = e.getSource();
-		
-		if(cause==go)
-		{
-			String age = input.getText();
-			
-			
-		}
-	}
-	
+    JLabel info;
+    JTextField input;
+    JButton go;
+    
+    public View()
+    {
+        setLayout(new FlowLayout());
+        
+        info = new JLabel("Enter your age here...");
+        info.setSize(20, 20);
+        add(info);
+        
+        input = new JTextField(20);
+        input.setEditable(true);
+        add(input);
+        
+        go = new JButton("Find matches");
+        go.setSize(20, 20);
+        go.addActionListener(this);
+        add(go);
+        
+    }
+    
+    @Override
+    public void actionPerformed(ActionEvent e) 
+    {
+        Object cause = e.getSource();
+        
+        if(cause==go)
+        {
+            int foo = Integer.parseInt(input.getText());
+            String g = "The highest age you can date is "+ model.getHighest(foo) 
+            + " and the lowest age you can date is " + model.getLowest(foo);
+            DatingAges gui = new DatingAges(g);
+            gui.setSize(300, 200);
+            gui.setDefaultCloseOperation(1);
+            gui.setVisible(true);
+            
+        }
+    }
+    
 }

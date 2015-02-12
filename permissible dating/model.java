@@ -13,10 +13,8 @@ public class model
     /**
      * Constructor for objects of class model
      */
-    public int getHighest(String number)
+    public static int getHighest(int n)
     {
-        int n = Integer.parseInt(number);
-
         if (n > 0)
         {
               return n + n/2 - 7 ;
@@ -28,10 +26,9 @@ public class model
 
     }
 
-    public int getLowest(String number)
+    public static int getLowest(int n)
     {
-        int n = Integer.parseInt(number);
-
+     
         if (n > 0)
         {
              return n/2 + 7 ;
