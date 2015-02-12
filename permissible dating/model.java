@@ -1,18 +1,13 @@
 
 /**
- * Write a description of class model here.
+ * The class is a set of methods needed in the GUI.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (James Burns) 
+ * @version (2/10/15)
  */
 public class model
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class model
-     */
+    //TODO add javadoc
     public static int getHighest(int n)
     {
         if (n > 15)

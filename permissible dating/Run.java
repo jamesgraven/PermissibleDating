@@ -1,4 +1,9 @@
-
+/**
+ * The class runs the whole project.
+ * 
+ * @author (CJ Graven) 
+ * @version (2/8/15)
+ */
 
 public class Run
 {

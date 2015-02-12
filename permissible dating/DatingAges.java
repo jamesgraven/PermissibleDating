@@ -9,10 +9,10 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 /**
- * Write a description of class DatingAges here.
+ * The class is an extra GUI.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (CJ Graven) 
+ * @version (2/10/15)
  */
 public class DatingAges extends JFrame
 {

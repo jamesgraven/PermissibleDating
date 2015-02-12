@@ -8,6 +8,12 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
+/**
+ * The class manages the main GUI.
+ * 
+ * @author (CJ Graven) 
+ * @version (2/11/15)
+ */
 
 @SuppressWarnings("serial")
 public class View extends JFrame implements ActionListener
