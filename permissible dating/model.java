@@ -1,4 +1,4 @@
-package swag;
+
 /**
  * Write a description of class model here.
  * 
