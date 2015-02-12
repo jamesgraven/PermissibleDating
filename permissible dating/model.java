@@ -1,4 +1,4 @@
-
+package swag;
 /**
  * Write a description of class model here.
  * 
@@ -15,7 +15,7 @@ public class model
      */
     public static int getHighest(int n)
     {
-        if (n > 0)
+        if (n > 15)
         {
               return n + n/2 - 7 ;
         }
@@ -29,9 +29,16 @@ public class model
     public static int getLowest(int n)
     {
      
-        if (n > 0)
+        if (n > 15)
         {
-             return n/2 + 7 ;
+        	if(n/2 + 7 <= 15)
+        	{
+        		return 16;
+        	}
+        	else
+        	{
+        		return n/2 + 7 ;
+        	}
         }
         else
         {

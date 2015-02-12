@@ -1,4 +1,4 @@
-
+package swag;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,7 +16,7 @@ import javax.swing.JTextField;
  */
 public class DatingAges extends JFrame
 {
-    public DatingAges(String label)
+    public DatingAges(String label, String label2)
     {
         setLayout(new FlowLayout());
         
@@ -25,6 +25,12 @@ public class DatingAges extends JFrame
         l.setText(label);
         
         add(l);
+        
+        JLabel s = new JLabel();
+        s.setSize(20, 20);
+        s.setText(label2);
+        
+        add(s);
         
     }
 }
