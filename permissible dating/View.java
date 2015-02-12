@@ -44,6 +44,8 @@ public class View extends JFrame implements ActionListener
         if(cause==go)
         {
             int foo = Integer.parseInt(input.getText());
+foo = foo - .5;
+foo.round;
             String g = "The highest age you can date is "+ model.getHighest(foo) 
             + " and the lowest age you can date is " + model.getLowest(foo);
             DatingAges gui = new DatingAges(g);
