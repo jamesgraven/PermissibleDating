@@ -42,6 +42,8 @@ public class View extends JFrame implements ActionListener
         
     }
     
+	//Will throw many errors
+	//TODO fix
     @Override
     public void actionPerformed(ActionEvent e) 
     {
